@@ -2,7 +2,7 @@ package com.driver;
 
 public class Pizza {
     private int price;
-    Boolean isVeg;
+    private Boolean isVeg;
     private String bill;
     private int cheese;
     boolean isExtraCheeseAdded;//to check if cheese is added to avoid adding it multiple time when method is invoked
@@ -23,14 +23,16 @@ public class Pizza {
         {
             this.price=300;
             this.toppings=70;
+            this.bill+="Base Price Of The Pizza: 300"+"\n";
         }
         else
         {
             this.price=400;
             this.toppings=120;
+            this.bill+="Base Price Of The Pizza: 400"+"\n";
         }
         this.cheese = 80;
-        this.bill += "Base Price Of The Pizza: "+this.price+"\n";
+        //this.bill +="Base Price Of The Pizza: "+this.price+"\n";
     }
 
     public int getPrice(){

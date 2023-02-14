@@ -50,17 +50,22 @@ public class Pizza {
         }
 
     }
-
+    boolean paperbag=true;
     public void addTakeaway(){
         // your code goes here
-        this.price+=20;
-        System.out.println("Paperbag Added: 20");
+        if(paperbag)
+        {
+            this.price+=20;
+            System.out.println("Paperbag Added: 20");
+            paperbag=false;
+        }
+
     }
 
     public String getBill(){
         // your code goes here
         this.bill=String.valueOf(this.price);
-        System.out.println("Total Price: "+this.bill);
+        this.bill+="Total Price: "+this.bill;
         return this.bill;
     }
 }

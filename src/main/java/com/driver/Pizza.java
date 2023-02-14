@@ -13,6 +13,10 @@ public class Pizza {
     private int toppings; //toppings vary for veg n non veg
     public Pizza(Boolean isVeg){
         // your code goes here
+        this.isExtraCheeseAdded=false;
+        this.isExtraToppingsAdded=false;
+        this.isBillCreated=false;
+        this.isTakeAway=false;
         this.isVeg=isVeg;
         if(isVeg)
         {
@@ -25,11 +29,6 @@ public class Pizza {
             this.toppings=120;
         }
         this.bill = "Base Price Of The Pizza: "+this.price+"\n";
-
-        this.isExtraCheeseAdded=false;
-        this.isExtraToppingsAdded=false;
-        this.isBillCreated=false;
-        this.isTakeAway=false;
     }
 
     public int getPrice(){
@@ -84,7 +83,7 @@ public class Pizza {
             isBillCreated=true;
             return this.bill;
         }
-        return "";
+        return this.bill;
     }
 }
 

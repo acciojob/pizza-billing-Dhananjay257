@@ -2,14 +2,27 @@ package com.driver;
 
 public class Pizza {
     private int price;
+
     private Boolean isVeg;
     private String bill;
+
     private int cheese;
+    private int toppings;
+
     boolean isExtraCheeseAdded;
     boolean isExtraToppingsAdded;
     boolean isTakeAway;
     boolean isBillCreated;
-    private int toppings;
+
+    //    private int price;
+//    private Boolean isVeg;
+//    private String bill;
+//    private int cheese;
+//    boolean isExtraCheeseAdded;
+//    boolean isExtraToppingsAdded;
+//    boolean isTakeAway;
+//    boolean isBillCreated;
+//    private int toppings;
     public Pizza(Boolean isVeg){
         // your code goes here
         this.isVeg=isVeg;

@@ -25,12 +25,12 @@ public class Pizza {
 //    private int toppings;
     public Pizza(Boolean isVeg){
         // your code goes here
-        this.isVeg=isVeg;
-        this.isExtraCheeseAdded=false;
-        this.isExtraToppingsAdded=false;
-        this.isBillCreated=false;
-        this.isTakeAway=false;
-        this.bill=" ";
+        this.isVeg = isVeg;
+        this.isBillCreated = false;
+        this.isExtraCheeseAdded = false;
+        this.isExtraToppingsAdded = false;
+        this.isTakeAway = false;
+        this.bill ="";
         if(isVeg)
         {
             this.price=300;

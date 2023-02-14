@@ -12,8 +12,8 @@ public class Pizza {
 
     private int toppings; //toppings vary for veg n non veg
     public Pizza(Boolean isVeg){
-        this.isVeg = isVeg;
         // your code goes here
+        this.isVeg=isVeg;
         if(isVeg)
         {
             this.price=300;
@@ -65,7 +65,7 @@ public class Pizza {
         {
             if(isExtraCheeseAdded)
             {
-                this.bill+="Extra Cheese Added: 80\n";
+                this.bill+="Extra Cheese Added: 80"+"\n";
             }
             if(isExtraToppingsAdded)
             {

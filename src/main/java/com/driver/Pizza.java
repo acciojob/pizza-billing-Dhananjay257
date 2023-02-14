@@ -35,7 +35,6 @@ public class Pizza {
         if(!isExtraCheeseAdded)
         {
             this.price+=80;
-            //System.out.println("Extra Cheese Added: 80");
             isExtraCheeseAdded=true;
         }
 
@@ -47,7 +46,6 @@ public class Pizza {
         {
             this.price+=this.toppings;
             isExtraToppingsAdded=true;
-           // System.out.println("Extra Toppings Added: ");
         }
 
     }
@@ -67,7 +65,7 @@ public class Pizza {
         {
             if(isExtraCheeseAdded)
             {
-                this.bill+="Extra Cheese Added: 80"+"\n";
+                this.bill+="Extra Cheese Added: 80\n";
             }
             if(isExtraToppingsAdded)
             {
@@ -77,7 +75,7 @@ public class Pizza {
             {
                 this.bill+="Paperbag Added: 20"+"\n";
             }
-            this.bill+="Total Price: "+this.price+"\n";
+            this.bill+="Total Price: "+this.price;
             isBillCreated=true;
             return this.bill;
         }

@@ -2,7 +2,7 @@ package com.driver;
 
 public class Pizza {
     private int price;
-    private Boolean isVeg;
+    Boolean isVeg;
     private String bill;
     private int cheese;
     boolean isExtraCheeseAdded;//to check if cheese is added to avoid adding it multiple time when method is invoked

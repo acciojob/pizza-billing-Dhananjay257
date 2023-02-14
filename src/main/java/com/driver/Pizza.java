@@ -25,6 +25,11 @@ public class Pizza {
             this.toppings=120;
         }
         this.bill = "Base Price Of The Pizza: "+this.price+"\n";
+
+        this.isExtraCheeseAdded=false;
+        this.isExtraToppingsAdded=false;
+        this.isBillCreated=false;
+        this.isTakeAway=false;
     }
 
     public int getPrice(){
